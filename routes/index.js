@@ -9,7 +9,7 @@ router.get('/basic-node', async function (req, res, next) {
     json: true
   }
   const response = await rp(options)
-  res.send('done');
+  res.send(response);
 });
 
 module.exports = router;
